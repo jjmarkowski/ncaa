@@ -12,11 +12,13 @@ public class Game {
 		return (team1.wp() - (team1.wp() * team2.wp())) / ((team1.wp() + team2.wp()) - (2 * team1.wp() * team2.wp()));
 	}
 
-	public boolean simulateGame() {
+	public Team simulateGame() {
 		if (Math.random() <= winPercent()) {
-			return true;
+			//System.out.println(team1.name());
+			return team1;
 		} else {
-			return false;
+			//System.out.println(team2.name());
+			return team2;
 		}
 
 	}

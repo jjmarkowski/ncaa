@@ -4,8 +4,9 @@ public class Team {
 	private double wp;
 	private int seed;
 	private int wins;
+	private int index;
 
-	public Team(String name, int seed, double wp) {
+	public Team(String name, int seed, double wp, int index) {
 		this.name = name;
 		this.seed = seed;
 		this.wp = wp;
@@ -30,6 +31,10 @@ public class Team {
 
 	public String name() {
 		return name;
+	}
+
+	public int index() {
+		return index;
 	}
 
 }
